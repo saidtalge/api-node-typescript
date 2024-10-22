@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",        // Alvo da versão do JavaScript
+      "module": "CommonJS",      // Define o sistema de módulos
+      "rootDir": "./src",        // Diretório raiz do código TypeScript
+      "outDir": "./dist",        // Diretório de saída dos arquivos compilados
+      "esModuleInterop": true,   // Habilita a interoperabilidade com módulos ES
+      "strict": true,            // Ativa a verificação estrita
+      "skipLibCheck": true,      // Pula a checagem de tipos em arquivos de bibliotecas
+      "forceConsistentCasingInFileNames": true // Força consistência em uso de maiúsculas/minúsculas
+    },
+    "include": [
+      "src/**/*.ts"  // Inclui todos os arquivos TypeScript no diretório src
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
+  

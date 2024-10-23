@@ -4,12 +4,8 @@ import DatabaseConnectionInterface from "../database/DatabaseConnection";
 
 export class TaskRepositoryDatabase implements TaskRepository {
 
-    // constructor(readonly connection: DatabaseConnectionInterface) {
-    //     this.connection = connection;
-    // }
-    constructor(){
-        
-    }
+    constructor(){}
+    
     async createTask(titulo: string, descricao: string): Promise<Task> {
         return new Task('1', titulo, descricao, 'pendente');
     }

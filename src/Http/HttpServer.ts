@@ -24,7 +24,7 @@ export class FastifyAdapter implements HttpServer {
     server: any;
 
     constructor(rota: any) {
-        this.server = Fastify({ logger: true });          
+        this.server = Fastify({ logger: true });      
         this.server.register(rota);
     }
 
